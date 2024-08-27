@@ -1,0 +1,7 @@
+{
+  "name": "mahesh",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
