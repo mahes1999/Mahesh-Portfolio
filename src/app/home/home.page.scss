@@ -1,27 +1,262 @@
-#container {
-  text-align: center;
+// #container {
+//   text-align: center;
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 50%;
+//   transform: translateY(-50%);
+// }
+
+// #container strong {
+//   font-size: 20px;
+//   line-height: 26px;
+// }
+
+// #container p {
+//   font-size: 16px;
+//   line-height: 22px;
+
+//   color: #8c8c8c;
+
+//   margin: 0;
+// }
+
+// #container a {
+//   text-decoration: none;
+// }
+// @import url('../../assets/vcr_osd_mono.zip');
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+// * {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+//   font-family: "VT323", monospace;
+// }
+
+// body {
+//   background: #f2f2f2;
+// }
+
+// h1 {
+//   font-size: 120px;
+//   text-align: center;
+//   color: rgba(255, 255, 255, .4);
+// }
+
+// .parallax-1 {
+//   background: red; /* Just for testing */
+
+//   // background: url(../../assets/anh-henry-nguyen-_GvAHB59dkk-unsplash.jpg) no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   // background-attachment: fixed;
+// }
+// .parallax-2 { 
+//   background: blue; /* Just for testing */
+
+//   // background: url('../../assets/pars-sahin-hgtfkhZWVe4-unsplash.jpg') no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   // background-attachment: fixed; 
+// }
+
+// .parallax-inner {
+//   padding: 10% 0;
+// }
+
+// h2 {
+//   font-size: 52px;
+//   color: #555;
+//   text-align: center;
+//   font-weight: 300;
+//   letter-spacing: 2px;
+//   margin: 20px 0 10px;
+// }
+// p {
+//   font-size: 16px;
+//   color: #555;
+//   text-align: justify;
+//   line-height: 30px;
+//   margin: 0 50px 40px;
+// }
+// .parallax-wrapper {
+//   overflow: hidden; /* Prevent content overflow outside the wrapper */
+//   height: 50vh; /* Adjust height as needed */
+// }
+
+// .parallax-1, .parallax-2 {
+//   transform: translateY(0); /* Initial position */
+//   transition: transform 0.3s ease-in-out; /* Smooth transition */
+// }
+
+// .parallax-card {
+//   --ion-background-color: rgba(0, 0, 0, 0.5); /* Adjust background color */
+//   --ion-card-background-color: rgba(0, 0, 0, 0.5); /* Adjust card background color */
+
+// }
+
+
+// .parallax-card img {
+//   height: 200px;
+//   object-fit: cover;
+//   transform: translateY(0);
+//   transition: transform 0.3s ease-in-out;
+// }
+
+// .parallax-card:hover img {
+//   transform: translateY(-20%); /* Adjust the translation value */
+// }
+// body {
+//   background-color: #202020;
+//   height: 200vh;
+//   position: relative;
+//   overflow-x: hidden;
+//   font-family: 'Monument Extended';
+//   margin: 0;
+//   padding: 0;
+  
+//   .grain {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     pointer-event: none;
+//     z-index: 300;
+//     transform: translateZ(0);
+    
+//     &:before {
+//       content: "";
+//       top: -10rem;
+//       left: -10rem;
+//       width: calc(100% + 20rem);
+//       height: calc(100% + 20rem);
+//       z-index: 9999;
+//       position: fixed;
+//       background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+//       opacity: 0.15;
+//       pointer-events: none;
+//       -webkit-animation: noise 1s steps(2) infinite;
+//       animation: noise 1s steps(2) infinite;
+//     }
+
+//     @-webkit-keyframes noise {
+//       to { transform: translate3d(-7rem,0,0) }
+//     }
+
+//     @keyframes noise {
+//       0% { transform: translate3d(0,9rem,0) }
+//       10% { transform: translate3d(-1rem,-4rem,0) }
+//       20% { transform: translate3d(-8rem,2rem,0) }
+//       30% { transform: translate3d(9rem,-9rem,0) }
+//       40% { transform: translate3d(-2rem,7rem,0) }
+//       50% { transform: translate3d(-9rem,-4rem,0) }
+//       60% { transform: translate3d(2rem,6rem,0) }
+//       70% { transform: translate3d(7rem,-8rem,0) }
+//       80% { transform: translate3d(-9rem,1rem,0) }
+//       90% { transform: translate3d(6rem,-5rem,0) }
+//       to { transform: translate3d(-7rem,0,0) }
+//     }
+//   }
+  
+//   h1, h2 {
+//     margin: 100px auto;
+//     padding: 0;
+//     width: 90vw;
+//     color: white;
+//     font-weight: 200;
+//     text-transform: uppercase;
+//     font-size: 5rem;
+//     letter-spacing: 0.5rem;
+//     line-height: 8rem;
+//   }
+  
+//   .image {
+//     position: fixed;
+//     top: 0;
+//     right: 0;
+//     height: 100vh;
+//     width: 50vw;
+//     background-image: url(https://images.unsplash.com/photo-1598382570113-48c8e44737b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3648&q=80);
+//     background-size: cover;
+//     background-position: center;
+//     filter: grayscale(100%);
+//     opacity: 0.2;
+//     z-index: -500;
+//   }
+  
+//   section {
+//     position: absolute;
+//     margin: 0;
+//     padding: 0;
+//     top: 100vh;
+//     height: 105vh;
+//     width: 100vw;
+//     background-color: #eaeaea;
+    
+//     h2 {
+//       color: black;
+//     }
+//   }
+// }
+
+
+
+
+// .copyright {
+//   position: fixed;
+//   bottom: 0;
+//   width: calc(100% - 160px);
+//   background-color: #151515;
+//   margin: 0;
+//   padding: 10px 80px;
+//   justify-content: center;
+//   text-align: center;
+  
+//   p {
+//     margin: 0;
+//     padding: 0;
+//     font-size: 0.7rem;
+//     color: white;
+    
+//     i {
+//       color: red;
+//     }
+    
+//     a {
+//       color: red;
+//       text-decoration: none;
+//       font-weight: bold;
+//     }
+//   }
+// }
+.parallax-card {
+  --ion-background-color: rgba(0, 0, 0, 0.5);
+  --ion-card-background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  position: relative;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.parallax-card img {
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.parallax-card:hover img {
+  transform: translateY(-20%); /* Adjust the translation value */
 }
 
-#container a {
-  text-decoration: none;
+.parallax-card:nth-of-type(2) {
+  /* Add this selector for the second card */
+  transform: translateY(100%); /* Initial offset for the second card */
+  opacity: 0;
+}
+
+.parallax-card:nth-of-type(2).visible {
+  transform: translateY(0);
+  opacity: 1;
 }
